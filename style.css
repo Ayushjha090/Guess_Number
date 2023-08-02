@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  font-family: "Fredoka", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* CSS for top section containing reset button and number message */
+.top-section {
+  height: 5%;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 10%;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.top-section h3 {
+  color: white;
+}
+
+/* CSS for middle section title and hidden number container */
+.mid-section {
+  min-height: 25%;
+  text-align: center;
+}
+
+.mid-section h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+/* CSS for line and container containing the actual number */
+.line {
+  height: 0%;
+  border: 5px solid white;
+}
+
+.number-container {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+}
+
+.number {
+  font-size: 3rem;
+}
+
+/* CSS for footer section */
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 10px;
+  padding: 20px 20px;
+}
+
+.number-input-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.number-input-container input {
+  width: 60%;
+  height: 80px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-check {
+  width: 50%;
+  font-size: 2rem;
+}
+
+.error-message {
+  color: red;
+  margin-top: 0px;
+  display: none;
+}
+
+.game-message-score-container {
+  color: white;
+  font-size: 1.75rem;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 0px) {
+  .top-section {
+    padding: 10px 5px;
+  }
+  .btn {
+    width: 40%;
+  }
+  .mid-section {
+    padding: 10px 10px;
+  }
+  .mid-section h1 {
+    font-size: 3rem;
+  }
+  .footer-section {
+    flex-direction: column;
+  }
+  .number-input-container {
+    width: 100%;
+  }
+  .btn-check {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 599px) {
+  .top-section {
+    padding: 10px 10px;
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 2.5rem;
+  }
+  .mid-section h1 {
+    font-size: 4rem;
+  }
+  .number {
+    font-size: 4rem;
+  }
+  .footer-section {
+    flex-direction: row;
+  }
+  .number-input-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 899px) {
+  .top-section {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 10%;
+    font-size: 1.5rem;
+  }
+  .mid-section h1 {
+    font-size: 3.5rem;
+  }
+  .number {
+    font-size: 3rem;
+  }
+  .number-input-container {
+    width: 30%;
+  }
+  .btn-check {
+    width: 50%;
+    font-size: 2rem;
+  }
+}

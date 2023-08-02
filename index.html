@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="top-section">
+      <button class="btn">Again !</button>
+      <h3>( Between 1 and 20 )</h3>
+    </section>
+    <section class="mid-section">
+      <h1>Guess My Number!</h1>
+    </section>
+    <!-- Special HTML Code in the Middle section for Line and box containing the number -->
+    <div class="line">
+      <div class="number-container"><p class="number">?</p></div>
+    </div>
+    <section class="footer-section">
+      <div class="number-input-container">
+        <input type="number" name="input-number" id="input-number" />
+        <p class="error-message">Enter number between 1 and 20 only</p>
+        <button type="submit" class="btn btn-check">Check!</button>
+      </div>
+      <div class="game-message-score-container">
+        <p class="game-message">Start guessing...</p>
+        <p>💯 Score: <span id="score" class="score">20</span></p>
+        <p>🥇 Highcore: <span id="high-score" class="score">0</span></p>
+      </div>
+    </section>
+    <!-- Including Script into HTML -->
+    <script src="script.js"></script>
+  </body>
+</html>
